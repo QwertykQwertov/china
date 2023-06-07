@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "China Visa Assistance Extension",
+  "version": "1.0.0",
+  "description": "Помощник в получении визы Китая. Обновление страницы с мониторингом свободных мест для записи на https://avas.mfa.gov.cn/qzyyCoCommonController.do?yyindex&index=false&locale=ru_RU",
+  "icons": {
+    "128": "china.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://avas.mfa.gov.cn/*"
+      ],
+      "js": [
+        "script.js"
+      ]
+    }
+  ],
+  "author": "qwertykqwertov@mail.ru"
+}
